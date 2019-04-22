@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5pw-xW-F8T">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Voting View Controller-->
+        <scene sceneID="ngZ-of-Zjb">
+            <objects>
+                <viewController id="5pw-xW-F8T" customClass="VotingViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="L1u-Pe-wta">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KNw-AX-sIS">
+                                <rect key="frame" x="20" y="238" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UBi-BP-xcc">
+                                <rect key="frame" x="173.5" y="314" width="67" height="30"/>
+                                <state key="normal" title="Cast Vote"/>
+                                <connections>
+                                    <action selector="castVoteButtonPressed:" destination="5pw-xW-F8T" eventType="touchUpInside" id="VD9-zQ-bd5"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What is your favorite color?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDE-0c-ytq">
+                                <rect key="frame" x="102.5" y="176" width="209" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Favorite Color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gE4-98-597">
+                                <rect key="frame" x="20" y="276" width="374" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="UBi-BP-xcc" firstAttribute="top" secondItem="gE4-98-597" secondAttribute="bottom" constant="8" symbolic="YES" id="2LI-lU-dA2"/>
+                            <constraint firstItem="KNw-AX-sIS" firstAttribute="trailing" secondItem="L1u-Pe-wta" secondAttribute="trailingMargin" id="68y-j6-EAX"/>
+                            <constraint firstItem="gE4-98-597" firstAttribute="centerX" secondItem="UBi-BP-xcc" secondAttribute="centerX" id="Bsf-fS-ER3"/>
+                            <constraint firstItem="BDE-0c-ytq" firstAttribute="centerX" secondItem="KNw-AX-sIS" secondAttribute="centerX" id="CRt-J1-POx"/>
+                            <constraint firstItem="KNw-AX-sIS" firstAttribute="leading" secondItem="gE4-98-597" secondAttribute="leading" id="GaY-mg-awq"/>
+                            <constraint firstItem="KNw-AX-sIS" firstAttribute="trailing" secondItem="gE4-98-597" secondAttribute="trailing" id="L11-xN-WmA"/>
+                            <constraint firstItem="UBi-BP-xcc" firstAttribute="centerX" secondItem="L1u-Pe-wta" secondAttribute="centerX" id="NuP-1t-DR8"/>
+                            <constraint firstItem="KNw-AX-sIS" firstAttribute="top" secondItem="BDE-0c-ytq" secondAttribute="bottom" constant="41" id="Peo-hf-53F"/>
+                            <constraint firstItem="gE4-98-597" firstAttribute="top" secondItem="KNw-AX-sIS" secondAttribute="bottom" constant="8" symbolic="YES" id="YkC-B3-8bi"/>
+                            <constraint firstItem="KNw-AX-sIS" firstAttribute="leading" secondItem="L1u-Pe-wta" secondAttribute="leadingMargin" id="cwA-UF-pyf"/>
+                            <constraint firstItem="BDE-0c-ytq" firstAttribute="centerX" secondItem="VkF-Uo-5ta" secondAttribute="centerX" id="ho4-Jc-TaK"/>
+                            <constraint firstItem="BDE-0c-ytq" firstAttribute="top" secondItem="VkF-Uo-5ta" secondAttribute="top" constant="132" id="jU2-Aj-6Cg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="VkF-Uo-5ta"/>
+                    </view>
+                    <connections>
+                        <outlet property="nameTextField" destination="KNw-AX-sIS" id="8uc-0x-2MS"/>
+                        <outlet property="responseTextField" destination="gE4-98-597" id="Wqc-Cc-clq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aOb-6u-kHp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="179.71014492753625" y="162.72321428571428"/>
+        </scene>
+    </scenes>
+</document>
