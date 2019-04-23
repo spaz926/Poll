@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Results-->
         <scene sceneID="qdO-Tq-vKo">
             <objects>
                 <tableViewController id="Tz3-KP-0o0" sceneMemberID="viewController">
@@ -48,6 +48,8 @@
                             <outlet property="delegate" destination="Tz3-KP-0o0" id="hDZ-zI-zVW"/>
                         </connections>
                     </tableView>
+                    <tabBarItem key="tabBarItem" title="Results" id="U09-e1-INr"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wJL-vv-RaW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

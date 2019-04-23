@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Combined View Controller-->
+        <!--Combined-->
         <scene sceneID="RjX-VV-10a">
             <objects>
                 <viewController id="iHK-lu-Ref" customClass="CombinedViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
@@ -44,6 +44,8 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="GMO-bv-ZX2"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Combined" id="CS4-Yd-GKy"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TYW-gN-B05" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
