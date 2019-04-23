@@ -15,6 +15,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="ZF7-Uo-z58" customClass="PollingTabBarViewController" customModule="Poll" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="6Va-Bp-8cd">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -32,7 +33,7 @@
         <scene sceneID="dIJ-87-tgk">
             <objects>
                 <viewControllerPlaceholder storyboardName="Voting" id="Nxb-z8-QhC" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="csK-Ba-gJQ"/>
+                    <tabBarItem key="tabBarItem" title="Voting" id="csK-Ba-gJQ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4B3-4z-jdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -42,7 +43,7 @@
         <scene sceneID="hsK-pI-UXc">
             <objects>
                 <viewControllerPlaceholder storyboardName="Results" id="HBC-pZ-6Z1" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="MR7-8r-VNJ"/>
+                    <tabBarItem key="tabBarItem" title="Results" id="MR7-8r-VNJ"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VTA-bL-qrc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -52,7 +53,7 @@
         <scene sceneID="rj6-p7-hVB">
             <objects>
                 <viewControllerPlaceholder storyboardName="Combined" id="LEf-kp-iei" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="more" id="Spz-dd-aUV"/>
+                    <tabBarItem key="tabBarItem" title="Combined" id="Spz-dd-aUV"/>
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gl6-YB-8Ze" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

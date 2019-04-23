@@ -10,6 +10,6 @@ import Foundation
 
 protocol VoteControllerProtocol: AnyObject {
     
-    var voteController: VoteController? { get set }
+    var voteController: VoteController? { set get }
     
 }

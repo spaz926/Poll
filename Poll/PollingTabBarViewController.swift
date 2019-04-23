@@ -10,7 +10,7 @@ import UIKit
 
 class PollingTabBarViewController: UITabBarController {
     
-    var voteController = VoteController()
+    let voteController = VoteController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,9 +18,11 @@ class PollingTabBarViewController: UITabBarController {
         print(voteController.votes)
         
         for childVC in children {
+            
             if let childViewController = childVC as? VoteControllerProtocol {
                 childViewController.voteController = voteController
             }
+            
         }
 
     }
